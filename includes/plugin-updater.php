@@ -15,8 +15,8 @@ class CFBBM_Plugin_Updater {
     private $github_repo;
 
     public function __construct() {
-        $this->github_username = 'your-github-username'; // Replace with your GitHub username
-        $this->github_repo = 'your-github-repo'; // Replace with your GitHub repo name
+        $this->github_username = 'macbaydigital'; // Replace with your GitHub username
+        $this->github_repo = 'Coupons-for-Bundles-by-Macbay'; // Replace with your GitHub repo name
 
         add_filter( 'pre_set_site_transient_update_plugins', array( $this, 'check_for_update' ) );
     }
